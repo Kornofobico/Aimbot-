@@ -43,6 +43,7 @@ local ESP_UPDATE_INTERVAL = 0.35
 --// FOV Circle (visual)
 local fovCircle
 local function updateFOVCircle()
+  print("updateFOVCircle foi chamada!")
     if fovCircle then fovCircle:Remove() end
     
     fovCircle = Drawing.new("Circle")
